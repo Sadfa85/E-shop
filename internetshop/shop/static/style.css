@@ -1,8 +1,9 @@
+    *{
+    font-family: "Segoe UI", Arial, sans-serif;
+    }
     h1{
-    @import url('https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap');
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: @import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap');
+    font-size: 40px;
   text-shadow:
     0 0 7px #fff,
     0 0 10px #fff,
@@ -13,14 +14,9 @@
     0 0 102px #bc13fe,
     0 0 151px #bc13fe;
 
-    animation: pulsate 1.5s infinite alternate;
+    animation: pulsate 2s infinite alternate;
     padding: 0.4em;
-    box-shadow: 0 0 .2rem #fff,
-            0 0 .2rem #fff,
-            0 0 2rem #bc13fe,
-            0 0 0.8rem #bc13fe,
-            0 0 2.8rem #bc13fe,
-            inset 0 0 1.3rem #bc13fe;}
+        }
 
 @keyframes pulsate {
     100% {
@@ -55,13 +51,19 @@
     }
 
     .product {
-    border: 2px black solid;
     border-radius: 30px;
         display: flex;
         height: 250px;
         margin-top: 20px;
     background-color: #3c3d40;
     padding: 10px;
+    width: 80%;
+    overflow-wrap: anywhere
+    }
+    .product_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     }
 
     h2 {
@@ -80,8 +82,25 @@
    	   background: #2b2d30;
 	   color: #fff;
     }
-    .navigation a {
+    a {
         text-decoration: none;
-        font-size: 25px
+        font-size: 20px;
+        text-color: white;
+        margin-left: 25px;
+        color: white;
+        }
+
+    .navigation {
+        display: flex;
+        flex-display: row;
+        align-items: center;
         justify-content: center;
+        align-items: center;
+    }
+    button {
+    border-radius: 30px;
+    width: 70px;
+    height: 250px;
+    cursor: pointer;
+    margin-left: auto;
     }
