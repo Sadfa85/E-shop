@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One+Outline&family=Playwrite+ES+Deco:wght@100..400&display=swap');
+* {
+    font-family: 'Didact Gothic';
+}
     h1{
     font-size: 40px;
+    font-family: 'Kumar One Outline';
   text-shadow:
     0 0 7px #fff,
     0 0 10px #fff,
