@@ -106,12 +106,13 @@
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    background: white;
     }
 .filter {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
-    background: white;
+    background: #3c3d40;
     border-radius: 20px;
     padding: 10px;
     margin-top: 20px;
@@ -124,7 +125,7 @@
 .searchInput {
     font-size: 20px;
     border: none;
-    background-color: #efefef;
+    background-color: white;
     padding: 11px;
     border-radius: 10px;
     width: 100%;
