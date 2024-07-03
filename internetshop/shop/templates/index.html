@@ -9,15 +9,6 @@
 <div class = "product_list">
 {% for product in products %}
     <div class = "product">
-        <img src="https://ic.pics.livejournal.com/rebrik/845681/220170/220170_original.png"/>
-        <div class="text">
-        <h2>Телефон</h2>
-        <p>Информация – ключ ко всему. Вы должны узнать сильные стороны ваших врагов и понять, кто из друзей вам вовсе не друг. Джейсон Стэтхэм</p>
-        <h3>79,90$</h3>
-        </div>
-        <button>КУПИТЬ</button>
-    </div>
-    <div class = "product">
         <img src="{{ product.image_url }}"/>
         <div class="text">
         <h2>{{ product.name }}</h2>
