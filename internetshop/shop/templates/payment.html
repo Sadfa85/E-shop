@@ -1,0 +1,36 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+<div class="navigation">
+
+<h1><span style="color: #05016a">Нет</span>Магазин</h1>
+
+
+</div>
+
+<div class="paymentCard">
+    <h2>Товар: {{ product.name }}</h2>
+    <img class="productImage" src="{{ product.image_url }}">
+    <h2>К оплате: {{ product.price }} рублей</h2>
+    <div class="vspace"></div>
+    <h3>Реквезиты для перевода:</h3>
+    <h2>+78005553535</h2>
+    <h2>Иванов И. И.</h2>
+    <div class="vspace"></div>
+    <form class="paymentForm" method="post">
+        {% csrf_token %}
+        <label>Адрес доставки:</label>
+        <input name="address" required>
+        <label>Ваше ФИО:</label>
+        <input name="name" required>
+        <div class="vspace"></div>
+        <div class="vspace"></div>
+        <button class="paymentButton">Оплатил</button>
+    </form>
+</div>
+
+<script>
+function copyPhone() {
+    navigator.clipboard.writeText('+78005553535');
+}
+</script>
