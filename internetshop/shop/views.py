@@ -3,8 +3,10 @@ from django.shortcuts import render, redirect
 
 from .models import Product, Review
 import telebot
+import os
 
-from .config import BOT_TOKEN, CHAT_ID
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+CHAT_ID = os.getenv("CHAT_ID")
 
 
 bot = telebot.TeleBot(BOT_TOKEN)
